@@ -90,7 +90,7 @@ def remote(url: str, cmd: str = "add", sub_cmd: str = "origin") -> None:
     os.system(f"git remote {cmd} {sub_cmd} {url}")
 
 
-def push(branch_name: str, cmd: str = "-u", sub_cmd: str = "origin") -> None:
+def push(branch_name: str = 'main', cmd: str = "-u", sub_cmd: str = "origin") -> None:
     """
     Push files to GitHub
     :param branch_name: Branch to push to
