@@ -31,7 +31,7 @@ def commit(message: str, sub_cmd: str = "-m") -> None:
     :param message: To store in git history
     :return:
     """
-    os.system(f'git commit {sub_cmd} "{message}"')
+    os.system(f'git commit {sub_cmd} \"{message}\"')
 
 
 def status(sub_cmd: str = None) -> None:
